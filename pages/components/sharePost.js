@@ -1,4 +1,4 @@
-import { FacebookShareButton, FacebookIcon } from "react-share"
+/* import { FacebookShareButton, FacebookIcon } from "react-share"
 
 export default function SharePost() {
 
@@ -31,7 +31,7 @@ export default function SharePost() {
     return (
         <>
 
-            {/* Box icons cdn for social media icons */}
+            {/* Box icons cdn for social media icons 
             <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
             <div className="container w-2/3 mt-4 m-auto">
@@ -55,4 +55,4 @@ export default function SharePost() {
             </div>
         </>
     )
-}
+} */
