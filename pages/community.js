@@ -4,8 +4,24 @@ import Auth from './components/auth'
 import Sidenav from './components/sidenav'
 import Navbar from './components/navbar'
 import Forum from './components/forum'
+import { basePath } from '../utils/siteConfig'
 
-export default function Community() {
+export async function getServerSideProps() {
+    const response = await fetch(`${basePath}/api/getUser`).then((response) =>
+        response.json()
+    );
+
+    const { user } = response;
+
+    if (!user) {
+        return {
+            redirect: { destination: "/login", permanent: false },
+        };
+    }
+    return { props: { user } };
+}
+
+export default function Community({ user }) {
 
     const [session, setSession] = useState(null)
 
@@ -28,6 +44,11 @@ export default function Community() {
                 <div>
 
                     <div>
+
+                        <p>
+                            Welcome {user.email}!{" "} 👋🏾
+                        </p>{" "}
+
                         {!session ? <Auth /> : <Forum key={session.user.id} session={session} />}
                     </div>
 
