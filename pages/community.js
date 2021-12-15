@@ -23,6 +23,19 @@ export async function getServerSideProps() {
 
 export default function Community({ user }) {
 
+    const router = useRouter();
+    const [isAuthed, setAuthStatus] = useState(false);
+
+    useEffect(() => {
+        fetch("./api/getUser")
+            .then((response) => response.json())
+            .then((result) => {
+                setAuthStatus(result.user && result.user.role === "authenticated");
+            });
+    }, []);
+
+
+
     const [session, setSession] = useState(null)
 
     useEffect(() => {
