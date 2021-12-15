@@ -15,7 +15,7 @@ export default function SharePost() {
                 title: `${title}`,
                 url: `${url}`
             }).then(() => {
-                console.log('Thanks fir sharing!')
+                console.log('Thanks for sharing!')
             }).catch(console.error)
         } else {
             overlay.classList.add('show-share')

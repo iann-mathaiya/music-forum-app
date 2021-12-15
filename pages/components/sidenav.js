@@ -99,7 +99,7 @@ export default function Sidenav() {
                         <li>
                             <a href="#" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-orange-600">
                                 <span className="inline-flex items-center justify-center h-12 w-12 text-lg text-orange-600"><i className="bx bx-question-mark"></i></span>
-                                <span className="text-sm font-medium">FAQ's</span>
+                                <span className="text-sm font-medium">FAQ`&apos;`s</span>
                             </a>
                         </li>
                         <li>

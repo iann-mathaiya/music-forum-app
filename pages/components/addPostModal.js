@@ -130,7 +130,7 @@ export default function AddPostModal({session}) {
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="username" className="mt-4 mb-2 block text-sm font-medium text-gray-700">Who's hosting?</label>
+                                        <label htmlFor="username" className="mt-4 mb-2 block text-sm font-medium text-gray-700">Who`&apos;`s hosting?</label>
                                         <input
                                             id="username"
                                             className="focus:ring-indigo-800 focus:border-indigo-800 block w-full sm:text-sm border-gray-300 rounded-md"
