@@ -1,13 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from './components/navbar'
 import Router, { useRouter } from 'next/router'
-import Sidenav from './components/sidenav'
-import { useState, useEffect } from 'react'
-import { supabase } from '../utils/supabaseClient'
-import Auth from './components/auth'
-import Forum from './components/forum'
+
 
 export default function Home() {
 
@@ -22,8 +17,6 @@ export default function Home() {
         <meta name="description" content="Move with the sound of the beat" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
 
 
       <div className={styles.container}>
